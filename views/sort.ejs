@@ -1,0 +1,49 @@
+<%- include('./includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/product.css">
+    </head>
+
+    <body>
+        <title><%=pageTitle%></title>
+            <main>
+                <% if (Object.keys(datas).length > 0) { %>
+                    <div class="grid">
+                        <% for (let data of datas) { %>
+                            <div>
+                                <article class="title-item">
+                                    <header class="card__header">
+                                        <h1>
+                                            <%=data["Attribute"]%>:
+                                        </h1>
+                                        <h1 class="product__title">
+                                            Title: <%= data["title"] %>
+                                        </h2>
+                                    </header>
+                                    <div class="title-isbn">
+                                        <h3 class="product__price">
+                                            ISBN: <%= data["isbn"] %>
+                                        </h3>
+                                        <p class="data_desc">
+                                        Author: <%= data["authors"] %>
+                                        </p>
+                                        <p class="data_desc">
+                                        Description: <%= data["description"] %>
+                                        </p>
+                                        <p class="data_desc">
+                                            Published At: <%= data["publishedAt"] %>
+                                        </p>
+                                    <div>
+                                </article>
+                            </div>
+                        <% } %>
+                    </div>
+                <% } else { %>
+                    <h1>No Data Found!</h1>
+                <% } %>
+                <div>
+                   <h1 class="Print"> Add a book and a magazine</h1>
+                    <form action="/add" method="POST">
+                        <button type="submit" value="all">Add Book/Magazine</button>
+                    </form>
+                </div>
+            </main>
+            <%- include('./includes/end.ejs') %>

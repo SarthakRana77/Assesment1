@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <body>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title><%=pageTitle%></title>
+            <form action="/thanks_success" method="POST">
+                <h1>Add a Book or Magazine</h1>
+                    <h2>
+                        Book:
+                    </h2>
+                    <div>
+                        <label for="book">Book Title :</label>
+                        <input type="text" id="titlebook" name="titlebook" placeholder="Title">
+                        <p>
+                        <label for="book">Book ISBN :</label>
+                        <input type="text" id="isbnbook" name="isbnbook" placeholder="ISBN">                
+                        <p>
+                        <label for="book">Book Author :</label>
+                        <input type="text" id="authorbook" name="authorbook" placeholder="Author">
+                        <p>
+                        <label for="book">Book Description :</label>
+                        <input type="text" id="descriptionbook" name="descriptionbook" placeholder="Description">
+                        <p>
+                    </div>
+                    <h2> 
+                        Magazine:
+                    </h2>
+                    <div>
+                        <p>
+                            <label for="book">Magazine Title :</label>
+                            <input type="text" id="titlemagazine" name="titlemagazine" placeholder="Title">
+                        </p>
+                        <p>
+                            <label for="book">Magazine ISBN :</label>
+                            <input type="text" id="isbnmagazine" name="isbnmagazine" placeholder="ISBN">                
+                        </p>
+                        <p>
+                            <label for="book">Magazine Author :</label>
+                            <input type="text" id="authormagazine" name="authormagazine" placeholder="Author">
+                        </p>
+                        <p>
+                            <label for="book">Magazine Description :</label>
+                            <input type="text" id="descriptionmagazine" name="descriptionmagazine" placeholder="Description">
+                        </p>
+                        <p>
+                            <label for="book">Magazine Published At :</label>
+                            <input type="date" id="descriptionmagazine" name="publishednmagazine" placeholder="Published At">
+                        </p>
+                        <p>
+                            <button type="submit"value="SubmitMagazine">Add Magazine</button>
+                        </p>
+                    </div>
+
+            </form>
+        </body>
+    </head>
+</html>

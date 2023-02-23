@@ -1,0 +1,22 @@
+<%- include('./includes/head.ejs') %>
+    <link rel="stylesheet" href="./public/css/product.css">
+        </head>
+        <body>
+            <%- include('./includes/navigation.ejs') %>
+                <title><%=pageTitle%></title>
+                <div class="main_centered">
+                    <form action="/display" method="POST">
+                        <p>
+                            <input type="radio" id="books" value="Display Books" name="value" >
+                            <label for="books"> Display Books</label><br>
+                            <input type="radio" id="magazines" value="Display Magazines" name="value">
+                            <label for="magazines"> Display Magazines</label><br>
+                            <input type="radio" id="authors" value="Display Authors" name="value">
+                            <label for="authors"> Display Authors</label><br>
+                        </p>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div> 
+        </body>
+    <%- include('./includes/end.ejs') %>
+        </head>
